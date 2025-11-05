@@ -1,5 +1,4 @@
-#include <cstdio>
-using namespace std;
+#include <stdio.h>
 
 double findElement(int n) {
     if (n == 0) return 0;
@@ -24,7 +23,7 @@ double findElement(int n) {
 int main() {
     int n;
     printf("n = ");
-    scanf_s("%d", &n);
+    scanf("%d", &n);
 
     double result = findElement(n);
     printf("v[%d] = %.2f\n", n, result);

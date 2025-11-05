@@ -1,13 +1,12 @@
-#include <cstdio>
-#include <cmath>
-using namespace std;
+#include <stdio.h>
+#include <math.h>
 
 int main() {
     double x, eps;
     printf("x (|x| < 1) = ");
-    scanf_s("%lf", &x);
+    scanf("%lf", &x);
     printf("Eps = ");
-    scanf_s("%lf", &eps);
+    scanf("%lf", &eps);
 
     double sum = 0.0;
     double term = x;

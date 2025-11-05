@@ -1,5 +1,5 @@
-#include <cstdio>
-using namespace std;
+#include <stdio.h>
+#include <stdbool.h>
 
 void checkBits(unsigned int a, unsigned int b) {
     bool found = false;
@@ -20,7 +20,9 @@ void checkBits(unsigned int a, unsigned int b) {
 
 int main() {
     unsigned int m, n;
-    scanf_s("%u %u", &m, &n);
+    printf("m = ");
+    scanf("%u", &m);
+    printf("n = ");
+    scanf("%u", &n);
     checkBits(m, n);
-    return 0;
 }

@@ -1,16 +1,16 @@
-#include <cstdio>
+#include <stdio.h>
 
 int main() {
     int n;
     printf("n = ");
-    scanf_s("%d", &n);
+    scanf("%d", &n);
 
     double sum = 0.0;
 
     for (int i = 1; i <= n; i++) {
         double y_i;
         printf("y_%d = ", i);
-        scanf_s("%lf", &y_i);
+        scanf("%lf", &y_i);
 
         double z_i;
         if (y_i < 10) {

@@ -1,9 +1,8 @@
-#include <cstdio>
-using namespace std;
+#include <stdio.h>
 
 int main() {
     unsigned int m, n;
-    scanf_s("%u %u", &m, &n);
+    scanf("%u %u", &m, &n);
 
     unsigned int commonOnes = m & n;
     int countOnes = 0;

@@ -1,6 +1,6 @@
 
-#include <cstdio>
-#include <cmath>
+#include <stdio.h>
+#include <math.h>
 
 double sinc(double x) {
     if (x == 0.0) {
@@ -20,12 +20,12 @@ int main() {
     int count;
 
     printf("Скільки різних чисел обчислити: ");
-    scanf_s("%d", &count);
+    scanf("%d", &count);
 
     for (int i = 0; i < count; i++) {
         double x;
         printf("\nx = ", i + 1);
-        scanf_s("%lf", &x);
+        scanf("%lf", &x);
 
         double s = sinc(x);
         double d = sinc_derivative(x);

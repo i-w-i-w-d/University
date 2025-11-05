@@ -1,13 +1,13 @@
-#include <cstdio>
+#include <stdio.h>
 
 int main() {
     double x;
     int n;
 
     printf("Введіть x: ");
-    scanf_s("%lf", &x);
+    scanf("%lf", &x);
     printf("Введіть n: ");
-    scanf_s("%d", &n);
+    scanf("%d", &n);
 
     double sum = 0.0;
     int exp = 1;
