@@ -1,0 +1,10 @@
+{
+    "C_Cpp.default.compilerPath": "g++.exe",
+    "files.associations": {
+        "*.cpp": "cpp"
+    },
+    "terminal.integrated.cwd": "${fileDirname}",
+    "code-runner.cwd": "${fileDirname}",
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true
+}
