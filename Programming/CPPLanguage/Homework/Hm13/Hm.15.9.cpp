@@ -42,3 +42,27 @@ public:
         }
     }
 };
+
+
+int main() {
+    vector<Move> kingMoves = {
+        Move(1, 0), Move(-1, 0), Move(0, 1), Move(0, -1),
+        Move(1, 1), Move(1, -1), Move(-1, 1), Move(-1, -1)
+    };
+    
+    vector<Move> knightMoves = {
+        Move(2, 1), Move(2, -1), Move(-2, 1), Move(-2, -1),
+        Move(1, 2), Move(1, -2), Move(-1, 2), Move(-1, -2)
+    };
+
+    Figure king("Король", kingMoves);
+    Figure knight("Кінь", knightMoves);
+
+    GameBoard chess(8, "Шахи");
+    
+    chess.place(0, 4, &king);
+    chess.place(0, 1, &knight);
+    chess.place(7, 4, &king);
+
+    chess.show();
+}
